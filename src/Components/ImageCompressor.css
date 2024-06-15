@@ -1,0 +1,163 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .image-compressor {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .quality-slider {
+    margin: 20px 0;
+  }
+  
+  .quality-slider label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .quality-slider input {
+    width: 100%;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .images div {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+  
+  .images img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .images p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  .download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #1aea58;
+    color: black;
+  }
+ 
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    z-index: 1000;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .images div {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .quality-slider label {
+      font-size: 1.2rem;
+    }
+  
+    .quality-slider input {
+      margin-top: 10px;
+    }
+  
+    .download-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    .loading {
+      font-size: 1rem;
+    }
+  
+    .popup {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quality-slider label {
+      font-size: 1rem;
+    }
+  
+    .download-button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+    }
+  
+    .loading {
+      font-size: 0.9rem;
+    }
+  
+    .popup {
+      font-size: 0.8rem;
+    }
+  }
+  
